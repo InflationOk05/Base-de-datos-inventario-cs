@@ -1,0 +1,51 @@
+Flujo de trabajo para Git y GitHub en un proyecto Java:
+
+1. **Actualizar tu copia local antes de trabajar:**
+
+git pull origin main
+
+* Trae los cambios que tu compañero haya subido para evitar conflictos.
+
+2. **Hacer cambios en tu código en VS Code.**
+
+* Editar archivos `.java`, agregar clases, etc.
+
+3. **Agregar los cambios a Git:**
+
+git add .
+
+* `.` agrega todos los archivos modificados.
+* También se puede agregar un archivo específico: `git add Main.java`
+
+4. **Hacer un commit con mensaje descriptivo:**
+
+git commit -m "Mensaje que describa los cambios"
+
+* Cada commit es un punto de control.
+* Ejemplo: `git commit -m "Agrego clase Cliente y métodos de validación"`
+
+5. **Subir los cambios a GitHub:**
+
+git push origin main
+
+* Sube los commits al repositorio remoto.
+* Si alguien subió cambios antes, hacer primero `git pull origin main`.
+
+6. **Trabajar con ramas (opcional, recomendable para varios desarrolladores):**
+
+git checkout -b rama-nombre
+
+* Trabajar en tu rama sin afectar la rama `main`.
+* Para fusionar tus cambios luego, usar Pull Request en GitHub.
+
+7. **Notas importantes:**
+
+* Siempre hacer `git pull origin main` antes de empezar a trabajar.
+* Siempre hacer `git add` + `git commit` antes de `git push`.
+* Mantener mensajes de commit claros y descriptivos.
+* Si surge un conflicto, Git lo indicará y VS Code permite resolverlo visualmente.
+
+
+---
+
+Este flujo sirve para vos y tu compañero, evitando pisarse el trabajo y manteniendo el repositorio actualizado.
